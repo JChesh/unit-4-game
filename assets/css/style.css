@@ -1,4 +1,15 @@
-.jumbotron
-{
-background-color:#A05F5F;
+
+
+/* Image Sizing */
+#crystalOne,
+#crystalTwo,
+#crystalThree,
+#crystalFour
+ {
+    height: 100px;
+    width: 100px;
+}
+
+.p-size{
+    font-size: 14px;
 }

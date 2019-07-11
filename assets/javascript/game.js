@@ -29,17 +29,11 @@ var crystals = {
         name: "one",
         value: 0
     }
-
-
-
-
-
-
-
-
-
-
 }
+
+//Functions
+
+
 
 
 

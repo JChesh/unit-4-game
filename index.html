@@ -1,102 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Header -->
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Unit 4 Game Crystal Collector</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<title>Unit 4 Game Crystal Collector</title>
-</head>
+
+<!-- Body -->
 
 <body>
 
-    <!-- Crystal Collector Heading + Instructions -->
+    <!-- Crystal Collector Heading -->
     <div class="container">
         <div class="jumbotron jumbotron-fluid text-center bg-primary">
             <div class="container">
                 <h1 class="display-4">Crystal Collector</h1>
-                <p class="lead">You will be given a random number at the start of the game</p>
-                <p class="lead">There are four crystals below, by clicking on a crystal you will add a specific amount
-                    of points to your total score</p>
-                <p class="lead">You win the game by matching your total score to the random number, you lose the game if
-                    your total score goes above the random number</p>
-                <p class="lead">The value of each crystal is hidden from you until you click on it.</p>
-                <p class="lead">Each time when the game starts, the game will change the values of each crystal</p>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h5 class="card-header text-center bg-success text-white">Target Score</h5>
-                        <div class="card-body">
-                            <p class="card-text text-center">0</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h5 class="card-header text-center bg-warning text-white">Your Score</h5>
-                        <div class="card-body">
-                            <p class="card-text text-center">0</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h5 class="card-header text-center bg-success text-white">Wins</h5>
-                        <div class="card-body">
-                            <p class="card-text text-center">0</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h5 class="card-header text-center bg-danger text-white">Losses</h5>
-                        <div class="card-body">
-                            <p class="card-text text-center">0</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card">
-                        <h5 class="card-header text-center bg-dark text-white">Crystals</h5>
-                        <div class="card-body">
-                            <p class="card-text text-center"></p>
+                        <h5 class="card-header text-center bg-success text-white">Game Instructions</h5>
+                        <div class="card-body card-text text-center">
+                            <p class="p-size">You will be given a random number at the start of the game</p>
+                            <p class="p-size">There are four crystals below, by clicking on a crystal you will add a
+                                specific amount
+                                of points to your total score</p>
+                            <p class="p-size">You win the game by matching your total score to the random number, you
+                                lose the game if
+                                your total score goes above the random number</p>
+                            <p class="p-size">The value of each crystal is hidden from you until you click on it.</p>
+                            <p class="p-size">Each time when the game starts, the game will change the values of each
+                                crystal</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Target Score + UserScore -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <h5 class="card-header text-center bg-success text-white">Target Score</h5>
+                                <div class="card-body">
+                                    <p class="card-text text-center">0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <h5 class="card-header text-center bg-warning text-white">Your Score</h5>
+                                <div class="card-body">
+                                    <p class="card-text text-center">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wins and Losses -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <h5 class="card-header text-center bg-success text-white">Wins</h5>
+                                <div class="card-body">
+                                    <p class="card-text text-center">0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <h5 class="card-header text-center bg-danger text-white">Losses</h5>
+                                <div class="card-body">
+                                    <p class="card-text text-center">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Crystal Buttons -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <h5 class="card-header text-center bg-dark text-white">Crystals</h5>
+                                <div class="card-body text-center">
+                                    <img src="https://beadage.net/wp-content/uploads/2015/08/blue-zircon-crystal-gemstone-300x300.jpg"
+                                        alt="blue" id="crystalOne">
+                                    <img src="https://df2sm3urulav.cloudfront.net/tenants/gr/uploads/content/58c63002e3058.jpg"
+                                        alt="green" id="crystalTwo">
+                                    <img src="https://banner2.kisspng.com/20171127/633/red-crystal-transparent-png-clip-art-image-5a1c767d09e7c1.8275534515118147810406.jpg"
+                                        alt="red" id="crystalThree">
+                                    <img src="https://beadage.net/wp-content/uploads/2014/09/amber-crystal-gemstone-healing-properties-300x300.jpg"
+                                        alt="yellow" id="crystalFour">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
             </div>
-        </div>
 
 
 
 
 
-
-
-    </div>
-
-
-
-
-
-
-
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+            <!-- Linking Jquery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- Linking Javascript -->
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
