@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!-- Header -->
 
 <head>
     <meta charset="UTF-8">
+    <!-- Linking Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Linking Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Unit 4 Game Crystal Collector</title>
+    <title>Unit-4 Game Crystal Collector</title>
 </head>
-
 <!-- Body -->
 
 <body>
@@ -23,7 +23,7 @@
                 <h1 class="display-4">Crystal Collector</h1>
             </div>
         </div>
-
+        <!-- Game Instructions -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -43,7 +43,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Target Score + UserScore -->
                 <div class="container">
                     <div class="row">
@@ -51,7 +50,7 @@
                             <div class="card">
                                 <h5 class="card-header text-center bg-success text-white">Target Score</h5>
                                 <div class="card-body">
-                                    <p class="card-text text-center">0</p>
+                                    <p class="card-text text-center" id="targetScore">0</p>
                                 </div>
                             </div>
                         </div>
@@ -59,13 +58,12 @@
                             <div class="card">
                                 <h5 class="card-header text-center bg-warning text-white">Your Score</h5>
                                 <div class="card-body">
-                                    <p class="card-text text-center">0</p>
+                                    <p class="card-text text-center" id="yourScore">0</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Wins and Losses -->
                 <div class="container">
                     <div class="row">
@@ -73,7 +71,7 @@
                             <div class="card">
                                 <h5 class="card-header text-center bg-success text-white">Wins</h5>
                                 <div class="card-body">
-                                    <p class="card-text text-center">0</p>
+                                    <p class="card-text text-center" id="wCounter">0</p>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +79,7 @@
                             <div class="card">
                                 <h5 class="card-header text-center bg-danger text-white">Losses</h5>
                                 <div class="card-body">
-                                    <p class="card-text text-center">0</p>
+                                    <p class="card-text text-center" id="lCounter">0</p>
                                 </div>
                             </div>
                         </div>
@@ -107,23 +105,14 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
             </div>
+        </div>
+    </div>
 
-
-
-
-
-            <!-- Linking Jquery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <!-- Linking Javascript -->
-            <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- Linking Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Linking Javascript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
